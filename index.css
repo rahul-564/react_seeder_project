@@ -1,0 +1,51 @@
+:root {
+
+    --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    --radius: 6px;
+    --form-width: 343px;
+  }
+  * {
+    /* box-sizing: border-box; */
+    /* color: initial; */
+    text-decoration: inherit !important;
+  }
+body {
+    margin: 0;
+    overflow: smooth;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+
+
+.shimmer-card {
+    width: 200px;
+    height: 350px;
+    background-color: lightgray;
+    margin: 20px;
+}
+
+.text-link {
+    color: inherit;
+    text-decoration: none;
+    text-align: end;
+}
+
+@media (max-width: 1041px) {
+   .restraunt-list {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+   }
+}
+

@@ -1,0 +1,35 @@
+table:
+  name: menus
+  schema: public
+array_relationships:
+  - name: carts
+    using:
+      foreign_key_constraint_on:
+        column: menu_id
+        table:
+          name: cart
+          schema: public
+  - name: restaurant_menus
+    using:
+      foreign_key_constraint_on:
+        column: menu_id
+        table:
+          name: restaurant_menu
+          schema: public
+  - name: widget_menus
+    using:
+      foreign_key_constraint_on:
+        column: menu_id
+        table:
+          name: widget_menu
+          schema: public
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - veg
+        - price
+        - image_id
+        - name
+        - id
+      filter: {}
